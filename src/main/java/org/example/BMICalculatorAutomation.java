@@ -24,7 +24,7 @@ public class BMICalculatorAutomation {
             heightInput.sendKeys("5");
             WebElement calculateButton = driver.findElement(By.id("calculate-button"));
             calculateButton.click();
-            Thread.sleep(1000);
+            Thread.sleep(2000);
             WebElement result = driver.findElement(By.id("results"));
             System.out.println("BMI Result: " + result.getText());
         } catch (Exception e) {
